@@ -1,0 +1,84 @@
+body	{
+	@import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
+@import url("components/container.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card.css");
+
+body{font-family: 'Lato', sans-serif;
+font-size: 20px;
+margin: 0;}
+
+h1, h2, h3
+{font-family: 'Roboto', sans-serif;
+}
+
+a{text-decoration: none;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;}
+}
+
+.banner{
+	background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%),
+	url(../../images/banniere.jpg);
+	color: white; padding: 160px 0px; background-position: center;
+	background-size: cover;
+}
+
+.banner h1{font-size: 50px;
+	padding-bottom: 20px;
+}
+
+.banner h2{font-size: 25px; font-weight:
+	lighter; margin-bottom: 40px;
+}
+
+.btn-blue{
+	background-color: rgba(120, 120 ,120); padding: 10px 15px;border-radius: 4px;
+	color: white; font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;}
+
+.card{display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+	margin: 10px; border-radius: 4px;
+	flex-basis: 250px;
+	padding: 15px;
+	flex-grow: 1;
+}
+
+.cards{display: flex;
+	flex-wrap: wrap;}
+
+.card h3{flex-grow: 1; padding-left: 20px;
+	font-size: 28px;}
+
+.card img{width: 150px;
+	border-radius: 4px;
+}
+
+.container{
+  width: 700px;
+  margin: 80px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
